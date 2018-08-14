@@ -41,6 +41,19 @@ public class CacheConfiguration {
             cm.createCache(com.aaxiscommerce.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.aaxiscommerce.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.aaxiscommerce.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Country.class.getName() + ".regions", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.aaxiscommerce.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
